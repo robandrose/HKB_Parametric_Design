@@ -1,6 +1,7 @@
 /* 
 *  Text 02
 *  Text einlesen
+
 *  HKB 16 Parametric Design, MR
 */
 String[] lines;
