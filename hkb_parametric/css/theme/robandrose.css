@@ -17,7 +17,7 @@ body {
 
 .reveal {
   font-family: "Circular Pro", Helvetica, sans-serif;
-  font-size: 38px;
+  font-size: 25px;
   font-weight: normal;
   color: #222; }
 
@@ -289,3 +289,12 @@ body {
 .reveal section img {
   border: none;
   box-shadow: none; }
+
+.reveal blockquote {
+  box-shadow: none;
+  border-left: 1px solid;
+  padding-left: 1em;
+  margin: 2em 0 2em 3em; }
+  .reveal blockquote p {
+    padding: 0;
+    margin: 0; }

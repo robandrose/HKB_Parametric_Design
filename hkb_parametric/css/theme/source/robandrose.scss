@@ -15,7 +15,7 @@ $backgroundColor: #fff;
 $mainColor: #222;
 $headingColor: #222;
 
-$mainFontSize: 20px;
+$mainFontSize: 25px;
 $mainFont: 'Circular Pro', Helvetica, sans-serif;
 $headingFont: 'Circular Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
@@ -53,6 +53,16 @@ section.has-dark-background {
 
 .reveal section img{
 	border:none;
-	box-shadow:none;f
-	
+	box-shadow:none;
+}
+ 
+.reveal blockquote {
+	box-shadow: none;
+	border-left: 1px solid;
+	padding-left:1em;
+margin:2em 0 2em 3em;
+	p{
+		padding:0;
+		margin:0;
+	}
 }
