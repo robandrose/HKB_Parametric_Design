@@ -1,0 +1,24 @@
+
+@font-face {
+  font-family: 'Circular Pro';
+  src: url('CircularPro-Book.eot'); /* IE9 Compat Modes */
+  src: url('CircularPro-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('CircularPro-Book.woff') format('woff'), /* Modern Browsers */
+       url('CircularPro-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('CircularPro-Book.svg#108162aafcdfd75e3fbe5d4503b68124') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Circular Pro';
+  src: url('CircularPro-Bold.eot'); /* IE9 Compat Modes */
+  src: url('CircularPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('CircularPro-Bold.woff') format('woff'), /* Modern Browsers */
+       url('CircularPro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('CircularPro-Bold.svg#b9e2b3219db1764f90fd3a48879b8370') format('svg'); /* Legacy iOS */
+       
+  font-style:   bold;
+  font-weight:  700;
+}
