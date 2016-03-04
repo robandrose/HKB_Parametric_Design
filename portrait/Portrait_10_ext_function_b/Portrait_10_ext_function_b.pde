@@ -4,57 +4,59 @@
 *  HKB 16 Parametric Design, MR
 */
 
-int dicke=100;
+int dicke=150;
 int mitteX;
 int mitteY;
-int anzahlHaare=100;
+
 
 // Setup Funktion, wird einmal aufgerufen
 void setup(){ 
    size(500,500);
    mitteX=width/2;
    mitteY=height/2;  
-    
 }
 
 
 // Draw Funktion, wird geloopt
 void draw(){
-
   background(0);
-  stroke(0);
-  arc(mitteX, 250, dicke*1.5, 150, -PI, 0, OPEN);
   
-  drawHair(mitteX , mitteY-100, -180,0);
+  fill(255);
   
-  ellipse(mitteX,mitteY-100,100,100);
-  rect(mitteX-dicke/2,mitteY,dicke,150);
-  rect(mitteX-dicke*3/4,mitteY,dicke/4,150);
-  rect(mitteX+dicke/2,mitteY,dicke/4,150);
+  arc(mitteX, mitteY, dicke*1.5, 150, -PI, 0, OPEN); // Schulter
+  ellipse(mitteX,mitteY-100,100,100); // Kopf
+  rect(mitteX-dicke/2,mitteY,dicke,150); // Bauch
+  rect(mitteX-dicke/2-dicke/4 ,mitteY,dicke/4,150); // linker Arm
+  rect(mitteX+dicke/2,mitteY,dicke/4,150); // rechter Arm
+  
+  // P I C K E L
+  
+  
+   drawPickels(mitteX, mitteY-100, 5,color(255,0,0),10);
+  
+  
+  // Last Step:
+  /*
+  for(int i=0;i<10;i++){
+    drawPickels(mitteX+random(-50,50), mitteY-100+random(-50,50), 5,color(255,0,0),10);
+  }*/
+  
+}
  
-}
-
-
-void mouseMoved(){
-  anzahlHaare=mouseX;
-}
-
-
-void drawHair(int xpos, int ypos, float startangle, float endangle){
-  pushStyle();
-  pushMatrix();
-   stroke(255);
-   strokeWeight(2);
-  translate(xpos,ypos);
-  
-  rotate(radians(startangle));
-  
-  float angle=(startangle-endangle)/float(anzahlHaare-1);
-  rotate(radians(-180));  
-  for(int i=0;i<anzahlHaare;i++){ 
-    line(0, 0,100,0);
-    rotate(radians(angle));
-  }
-  popMatrix();
-  popStyle();
-}
+ 
+ 
+ void drawPickels(float pickelherdx, float pickelherdy, int numpickels, int pickelcolor, float pickelabstand){
+   pushStyle();
+   pushMatrix();
+   translate(pickelherdx, pickelherdy);
+   noStroke();
+   fill(pickelcolor);
+   
+   for(int i=0;i<numpickels;i++){
+      ellipse(random(-10,10),random(-10,10),5,5);
+   }
+   
+   popMatrix();
+   popStyle();
+    
+ }

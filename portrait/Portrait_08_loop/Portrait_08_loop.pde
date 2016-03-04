@@ -29,15 +29,11 @@ void draw(){
   rect(mitteX-dicke*3/4,mitteY,dicke/4,150);
   rect(mitteX+dicke/2,mitteY,dicke/4,150);
   
-  
   stroke(150);
-
   for(int i=0;i<anzahlHaare;i++){ 
     float startx=mitteX-dicke/2;
     float abstand=dicke/float(anzahlHaare);
     float xpos=startx+i*abstand;
-    line(xpos, 100,xpos,140);
-    
+    line(xpos, 100,xpos,140);    
   }
-  
 }
