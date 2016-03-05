@@ -1,174 +1,267 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
+    <title>reveal.js – The HTML Presentation Framework</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/robandrose.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/simple.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+<body>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+            <section data-markdown>
+                # Parametric Design 
+                ## Digitale Werkzeuge selber basteln
+                *HKB 2016*   
+                Michael Flückiger  
+                Matthias Rohrbach
+            </section>
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+            <section data-markdown>
+                # Matthias 
+                * Studium Visuelle Kommunikation, Vertiefungsrichtung Illustration, HGK Luzern, 2001–2003
+                * Diplom FH Gestalter, visuelle Kommunikation, Vertiefung Interaktion, HGK Basel, 2003–2006
+                * Rob&Rose, seit 2007
+            </section>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+            <section >
+            	Singstimmen, interaktives Bühnenbild
+            <iframe src="https://player.vimeo.com/video/31780145?color=ffffff&portrait=0"  width="500px" heigh="300px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+			</section>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/robandrose.css" id="theme">
+            <section data-markdown>
+                # Michi 
+                * asdfljasdf
+                * sdlfjlajsdf
+            </section>
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/simple.css">
+            <section  >
+            	<iframe data-src="http://www.laikafont.ch"></iframe> 
+            </section>
+            
+            <section data-markdown>
+            # Was? 
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
+            Parametrisches Design heisst:
 
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-
-				<section data-markdown>
-						# Parametric Design
-						## HKB 2016 
-						Michael Flückiger  
-						Matthias Rohrbach
-
-						
-				</section>
-
-			<section data-markdown>
-					# Was ist parametrisches Design?
-					Aus einem Papier über die Software Rokfor von Urs Hofer über Paramteric Design:
-  					> «Sich wiederholende Aufgaben werden automatisiert: Die Arbeit des Gestalters verschiebt sich von der Gestaltung einzelner Dokumente zur Gestaltung eines einzigen Regelwerks für das komplette Ergebnis.
-
-						
-				</section>
-
-
-				<section data-markdown>
-					> Die Gestaltung ist nicht ein nachgeschobener Prozess, sondern wird vorgezogen. Sie bedeutet nicht mehr nur Formgebung, sondern Regeldefinition. Damit ist die Gestaltung nicht mehr reaktiv, sondern aktiv: Sie orientiert sich nicht mehr am Ist-, sondern am Was- wäre-wenn-Zustand. Der Gestalter positioniert nicht Elemente, sondern er beschreibt, wie er auf diese Position gestossen ist. Die Beschreibung muss dabei gewisse Rahmenbedingungen erfüllen: Sie muss etwa logisch nachvollziehbar sein und sie braucht die Charakteristika eines Algorithmus. Intuition und Gefühl müssen dabei für einen Computer ausführbar formuliert werden.»
-						
-				</section>
-
-				<section data-markdown>
-					### Wann benötigt man parametrisches Design?
-					Der Begriff stammt ursprünglich aus der Architektur:
-![alt text](img/parametric/architektur.png "")
-						
-				</section>
-
-				<section data-markdown>
-		
-Parametrisches Design wird dann relevant, wenn die hohe Komplexität eines Systems eine manuelle Gestaltung extrem Arbeitsintensiv und mühsam macht, und wenn viele Abhängigkeiten zwischen den einzelnen Gestaltungseelementen bestehen, und Parameter die sich gegenseitig beeinflussen. So zum Beispiel bei architektonischen Entwürfen oder bei komplexen Datenvisualisierungen etc. aber auch bei grafischen Elementen, Schriften etc.
-
-Parametrisches Gestalten aus der Not
-– hohe Komplexität meistern,
-– aufwändige, repetitive Arbeiten verhindern
-
-Parametrisches Gestalten aus der Freude am Algorithmischen
-– hohe Komplexität herstellen an Orten, wo diese gar nicht zwingend ist.
-– Auf Formensprachen gelangen, die erst aus dem Algorithmus entstanden sind, und nicht mit Papier und Schere / Stift herstellbar wären
-
-				</section>
-
-
-				<section data-markdown>
-						## Einführung Processing
-						### Geschichte:
-						Processing wurde von Ben Fry und Casey Reas 2001 am MIT Media Lab entwickelt, quasi als direkter Nachfolger des «Disign by Numbers» Projekt von John Maeda, in deren Klasse sie studierten.
-
-						Das Ziel war es eine vereinfachte Programmierumgebung zu entwickeln um einen einfachen Einstieg in die Programmierung zu ermöglichen. 
-
-						
-						
-				</section>
-				<section data-markdown>
-					### Basis
-					Die Basis von Processing ist die Programmiersprache JAVA. Processing ist eine Bibliothek dieser Sprache und hat alle Möglichkeiten, die auch Java bietet.
-
-				</section>
-
-				
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section data-markdown>
-						### Processing ist:
-						Eine Community und Foundation
-						![alt text](img/processing/p_foundation.png "")
-					</section>
-
-					<section data-markdown>
-						Eine Webseite
-						![alt text](img/processing/processing_org.png "")						
-					</section>
-					<section data-markdown>
-						… mit einem Nachschlagewerk
-						![alt text](img/processing/processing_org_ref.png "")						
-					</section>
-		
-					<section data-markdown>
-						Eine IDE (integrated development environment)
-						![alt text](img/processing/p_ide.png "")						
-					</section>
-					
-
-					<section data-markdown>
-						Ein Ecosystem mit vielen Libraries und verwandten Projekten wie P5.js
-						![alt text](img/processing/p5js.png "")						
-					</section>	
-					<section data-markdown>
-						arduino für die Mikrokontrollerprogrammierung
-						![alt text](img/processing/arduino.png "")						
-					</section>				
-				</section>
-
-
-			</div>
-
-		</div>
+            * Gestalten mit Parametern
+            * Gestalten mit Regelwerken
+            
+            </section>
+            
+            <section data-markdown>
+            ## Was bedeutet das für mich als Gestalter?
+            > «Sich wiederholende Aufgaben werden automatisiert: Die Arbeit des Gestalters verschiebt sich von der Gestaltung einzelner Dokumente zur Gestaltung eines einzigen Regelwerks für das komplette Ergebnis. Die Gestaltung ist nicht ein nachgeschobener Prozess, sondern wird vorgezogen. Sie bedeutet nicht mehr nur Formgebung, sondern Regeldefinition. (…) »       
+            </section>
+            
+            <section data-markdown>
+                # Woher?
+                …kommt der Begriff?  
+                
+                Als Konsequenz der Digitalisierung aller menschlichen/gesellschaftlichen/kulturellen Bereiche und insbesondere ihrer Kommunikationsmittel, dem starken Fokus auf Netz und digtale Medien wird nun auch die Gestaltungspraxis und die Rolle des Gestalters hinterfragt. GestalterInnen müssen sich zwangsläufig auf eine Art und Weise zu digitalen Medien und ihren Möglichkeiten verhalten. 
 
 
 
+                
+
+            </section>
+
+            <section>
+            <section data-markdown>
+                ## Architektur
+                Grosse Relevanz hat der Begriff seit längerer Zeit im Feld der Architektur. Es existieren an Architekturhochschulen Professuren für algorithmisches Entwerfen, wo einzig auf die Gestaltungsmöglichkeiten mit digitalen Werkzeugen fokussiert wird. In der Architektur besteht eine höhere Dringlichkeit für parametrisiertes Gestalten, weil die Komplexität der Problemstellung extrem hoch ist, einerseits durch die räumliche Komponente aber auch durch technische Bedingungen wie Tragfähigkeit einer Struktur etc. 
+  
+            </section>
+
+            <section data-markdown>
+           Google Suche Parametric Design
+            ![](img/parametric/google_search.png )   
+            </section>
+
+            <section data-markdown>
+            Bsp Dach des neuen Elefantenhauses im zürcher Zoo
+            ![](img/parametric/elefantenhaus03.jpg "")   
+            </section>
+            
+            <section data-markdown>
+                  – Pavillon
+
+            </section>
+            <section>
+
+                <iframe src="https://player.vimeo.com/video/74350367"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+            </section>
+            
+            </section>
+
+            
+            
+            
+            <section>
+
+            <section data-markdown>
+                ## Kommunikationsdesign
+                Aber auch im Kommunikationsdesign wird seit längerem mit parametrischen Gestaltungsansätzen gearbeitet. Einer der ersten, die das Potential von Computern im Bereich des Designs exploriert haben war John Maeda, der lange Zeit am MIT Media Lab eine Professur inne hatte. Bei ihm studierten auch die Entwickler von Processing, welches wir für diesen Kurs verwenden werden.
+  
+            </section>
+             <section data-markdown>
+            MIT
+            </section>
+            
+            <section data-markdown>
+            Page?
+            </section>
+            </section>
+
+            <section data-markdown>
+            # Wie
+            …geht parametric Design?
+            > «Der Gestalter positioniert nicht Elemente, sondern er beschreibt, wie er auf diese Position gestossen ist. Die Beschreibung muss dabei gewisse Rahmenbedingungen erfüllen: Sie muss etwa logisch nachvollziehbar sein und sie braucht die Charakteristika eines Algorithmus. Intuition und Gefühl müssen dabei für einen Computer ausführbar formuliert werden.» 
+
+            </section>
+
+            <section data-markdown>
+            ## Programmieren
+            Am Anfang wird also Intuition und Gefühl in einer dem Computer verständlichen Sprache ausgedrückt.  Diese Sammlung von Anweisungen (Algorithmus) zur Lösung des Problems sollen nun vom Computer (oder einer Heerschaar von Helfern) ausgeführt werden, um schlussendlich in einem Bild, einem Räumlichen Gebilde oder einem Ton etc. ihren Ausdruck zu finden.
+
+            Das heisst, ich muss als Gestalter die Sprache des Computers verstehen um mich mit ihm auf Augenhöhe verständigen zu können, und ihn als Lakaien für meine Ziele einspannen zu können. 
+            
+            Sprich, *ich muss Programmieren lernen*. 
+            </section>
+            <section data-markdown>
+            ## Digital produzieren
+            Zudem bedingt das Gestalten socher Regelwerke, falls etwas anderes produziert werden soll als digitale Bilder auf dem Bildschirm, einen möglichst geschlossenen digitalen Produktionsprozess, damit die Iterationszyklen kurz sind. So kann das entworfene Regelwerk in kurzen Abständen immer wieder durchgespielt und entsprechend angepasst, also gestaltet werden.
+            </section> 
+            <section data-markdown>
+            Solche Ausgabeeinheiten sind Laserprinter, Lasercutter, 3d-Drucker CNC-Fräsen und Roboter.
+            – Bilder der Ausgabeeinheiten
+
+            </section> 
+
+            <section data-markdown>
+            # Warum
+            …sollen wir uns das antun?
+            </section>
+            <section data-markdown>
+            ## Lösung Komplexer Probleme
+            Parametrisches Design wird einerseits dann relevant, wenn die hohe Komplexität eines Systems eine manuelle Gestaltung extrem Arbeitsintensiv und mühsam macht, wenn viele Abhängigkeiten zwischen den einzelnen Gestaltungseelementen bestehen, und verschiedene Parameter sich gegenseitig auf komplizierte Weise beeinflussen. So zum Beispiel bei architektonischen Entwürfen oder bei komplexen Datenvisualisierungen etc. aber auch bei grafischen Elementen, Schriften etc. 
+            
+            * hohe Komplexität meistern
+            * komplizierte Prozesse beschleunigen
+            * aufwändige, repetitive Handarbeiten verhindern
+            </section>
+
+            <section data-markdown>
+            ## Algorithmisches Denken
+            Andererseits bietet das Denken in Algorithmen und die schier endlose Geduld von Computern im Ausführen komplexer Regeln ein grosses Potential, zu Konzepten und Formensprachen zu gelangen, die erst mit Hilfe von Algorithmen denkbar sind, und nicht mit Papier und Schere / Stift herstellbar wären.
+            
+            * hohe Komplexität herstellen aus der Lust an Komplexität.
+            * Auf neue Formensprachen gelangen
+            * grosse, evtl automatisierte Modularität herstellen
+            </section>
+
+            <section data-markdown>
+            ## Selbstermächtigung als Gestalter:
+            Als Gestalter sind wir in der Regel Anwender von Programmen und können mit diesen die vorgegebenen Aufgaben mehr oder weniger sinnvoll lösen. Sobald wir aber in der Lage sind, unsere eigenen ganz spezifischen Werkzeuge zur Lösung unserer Probleme herzustellen 
+            
+            * Die Macht über die Werkzeuge ermächtigt uns, zu ganz eigenen Lösungen zu gelangen und nicht in die Filter-Falle zu tappen.
+            </section>
+
+            <section data-markdown>
+            # Unser Fokus
+
+            * Parametrisches Design ermöglicht eine spezifische Denkweise
+            * Der Fokus soll auf der Freude und beim Explorieren liegen
+            * Daher kein komplexer Datensatz als Grundlage, sondern Text mit vielen Bezügen. 
+
+            </section>
 
 
+            <section>
+            <iframe src="https://player.vimeo.com/video/58018004" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>            
+            </section>
+			
+            <section>
+             <iframe src="https://player.vimeo.com/video/74350367"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </section>
+        	
+            <section data-markdown>
+            # Algorithmus
+            Wikipedia:
+            > Ein Algorithmus ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems oder einer Klasse von Problemen. Algorithmen bestehen aus endlich vielen, wohldefinierten Einzelschritten.  Somit können sie zur Ausführung in einem Computerprogramm implementiert, aber auch in menschlicher Sprache formuliert werden. Bei der Problemlösung wird eine bestimmte Eingabe in eine bestimmte Ausgabe überführt.
+            </section>
+            <section>
+            <img data-src="img/algorithmus/flowchart.jpg" />
+            </section>
+            <section>
+                <iframe data-src="http://www.sorting-algorithms.com"></iframe>
+            </section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
 
-		<script>
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }]
+    });
+    </script>
+</body>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: false,
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
-
-	</body>
 </html>

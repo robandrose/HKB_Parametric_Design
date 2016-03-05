@@ -55,14 +55,36 @@ section.has-dark-background {
 	border:none;
 	box-shadow:none;
 }
+
+.reveal section ul{
+
+	margin-bottom:1.5em;
+	padding-left:.5em;
+list-style: none;
+
+li:before{
+	content:"–";
+	position:relative;
+	margin-left: -20px; /* optional, for multiline li element */
+	left: -10px;
+}
+
+}
  
 .reveal blockquote {
+	width:auto;
 	box-shadow: none;
-	border-left: 1px solid;
-	padding-left:1em;
-margin:2em 0 2em 3em;
-	p{
-		padding:0;
-		margin:0;
+	padding:0 2em 0 2em;
+	em{
+		font-weight:bold;
 	}
+}
+
+.reveal section{
+	
+	 height:100%;
+}
+.reveal section iframe{
+	width:100%;
+	height:100%;
 }

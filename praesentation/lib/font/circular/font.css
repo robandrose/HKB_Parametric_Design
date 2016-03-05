@@ -1,14 +1,25 @@
+@font-face {
+  font-family: 'Circular Pro';
+  src: url('CircularPro-Black.eot'); /* IE9 Compat Modes */
+  src: url('CircularPro-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('CircularPro-Black.woff') format('woff'), /* Modern Browsers */
+       url('CircularPro-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('CircularPro-Black.svg#a9baca9c3ea45fe3af767a2cc64fb7f8') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  900;
+}
 
 @font-face {
   font-family: 'Circular Pro';
-  src: url('CircularPro-Book.eot'); /* IE9 Compat Modes */
-  src: url('CircularPro-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('CircularPro-Book.woff') format('woff'), /* Modern Browsers */
-       url('CircularPro-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('CircularPro-Book.svg#108162aafcdfd75e3fbe5d4503b68124') format('svg'); /* Legacy iOS */
+  src: url('CircularPro-BlackItalic.eot'); /* IE9 Compat Modes */
+  src: url('CircularPro-BlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('CircularPro-BlackItalic.woff') format('woff'), /* Modern Browsers */
+       url('CircularPro-BlackItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('CircularPro-BlackItalic.svg#cedad68c9cb77903936f0d0a4d3fef20') format('svg'); /* Legacy iOS */
        
-  font-style:   normal;
-  font-weight:  400;
+  font-style:   italic;
+  font-weight:  900;
 }
 
 @font-face {
@@ -19,6 +30,67 @@
        url('CircularPro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('CircularPro-Bold.svg#b9e2b3219db1764f90fd3a48879b8370') format('svg'); /* Legacy iOS */
        
-  font-style:   bold;
+  font-style:   normal;
   font-weight:  700;
 }
+
+@font-face {
+  font-family: 'Circular Pro';
+  src: url('CircularPro-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('CircularPro-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('CircularPro-BoldItalic.woff') format('woff'), /* Modern Browsers */
+       url('CircularPro-BoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('CircularPro-BoldItalic.svg#cc95f5b6d472afb9de3d0461d6dc531f') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Circular Pro';
+  src: url('CircularPro-Book.eot'); /* IE9 Compat Modes */
+  src: url('CircularPro-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('CircularPro-Book.woff') format('woff'), /* Modern Browsers */
+       url('CircularPro-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('CircularPro-Book.svg#108162aafcdfd75e3fbe5d4503b68124') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  500;
+}
+
+@font-face {
+  font-family: 'Circular Pro';
+  src: url('CircularPro-BookItalic.eot'); /* IE9 Compat Modes */
+  src: url('CircularPro-BookItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('CircularPro-BookItalic.woff') format('woff'), /* Modern Browsers */
+       url('CircularPro-BookItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('CircularPro-BookItalic.svg#5fc80642499a19deeefe11f682fa370c') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  500;
+}
+
+@font-face {
+  font-family: 'Circular Pro';
+  src: url('CircularPro-Medium.eot'); /* IE9 Compat Modes */
+  src: url('CircularPro-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('CircularPro-Medium.woff') format('woff'), /* Modern Browsers */
+       url('CircularPro-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('CircularPro-Medium.svg#d89566e73316b912948a6f259bd3bd02') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  600;
+}
+
+@font-face {
+  font-family: 'Circular Pro';
+  src: url('CircularPro-MediumItalic.eot'); /* IE9 Compat Modes */
+  src: url('CircularPro-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('CircularPro-MediumItalic.woff') format('woff'), /* Modern Browsers */
+       url('CircularPro-MediumItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('CircularPro-MediumItalic.svg#82c5781a80e4320b28ca9ad2c3b516b8') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  600;
+}
+

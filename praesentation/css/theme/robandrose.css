@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../../lib/font/circular/font.css);
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
@@ -290,11 +291,27 @@ body {
   border: none;
   box-shadow: none; }
 
+.reveal section ul {
+  margin-bottom: 1.5em;
+  padding-left: .5em;
+  list-style: none; }
+  .reveal section ul li:before {
+    content: "–";
+    position: relative;
+    margin-left: -20px;
+    /* optional, for multiline li element */
+    left: -10px; }
+
 .reveal blockquote {
+  width: auto;
   box-shadow: none;
-  border-left: 1px solid;
-  padding-left: 1em;
-  margin: 2em 0 2em 3em; }
-  .reveal blockquote p {
-    padding: 0;
-    margin: 0; }
+  padding: 0 2em 0 2em; }
+  .reveal blockquote em {
+    font-weight: bold; }
+
+.reveal section {
+  height: 100%; }
+
+.reveal section iframe {
+  width: 100%;
+  height: 100%; }
