@@ -287,6 +287,12 @@ body {
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
+.reveal section {
+  position: relative; }
+
+.reveal section.inverted h1, .reveal section.inverted h2, .reveal section.inverted h3, .reveal section.inverted h4, .reveal section.inverted p, .reveal section.inverted li {
+  color: white; }
+
 .reveal section img {
   border: none;
   box-shadow: none; }
@@ -302,16 +308,56 @@ body {
     /* optional, for multiline li element */
     left: -10px; }
 
+.reveal section iframe {
+  width: 100%;
+  height: 100%; }
+
+.reveal section .vimeostretch {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 57%;
+  position: relative; }
+  .reveal section .vimeostretch iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.reveal .clear {
+  clear: both; }
+
+.reveal em {
+  font-weight: 700; }
+
 .reveal blockquote {
   width: auto;
   box-shadow: none;
   padding: 0 2em 0 2em; }
-  .reveal blockquote em {
-    font-weight: bold; }
+
+div.quelle {
+  margin-top: 1rem;
+  font-size: 0.7em;
+  bottom: 1.5em;
+  position: absolute; }
+
+div.small {
+  margin-top: 1rem;
+  font-size: 0.7em; }
 
 .reveal section {
   height: 100%; }
 
-.reveal section iframe {
-  width: 100%;
-  height: 100%; }
+.reveal img.small {
+  width: 25%; }
+
+.reveal img.medium {
+  height: 430px;
+  margin-right: 10px; }
+
+.reveal img.left {
+  float: left; }
+
+.reveal img.right {
+  float: right; }
