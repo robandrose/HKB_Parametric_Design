@@ -349,6 +349,9 @@ div.small {
 .reveal section {
   height: 100%; }
 
+.reveal img {
+  max-height: 90%; }
+
 .reveal img.small {
   width: 25%; }
 

@@ -132,14 +132,18 @@ div.small{
 .reveal section{
 	 height:100%;
 }
+
+.reveal img{
+	max-height:90%;
+}
 .reveal img.small{
 	width:25%;
 }
+
 .reveal img.medium{
 	height:430px;
 	margin-right:10px;
 }
-
 
 .reveal img.left{
 	float:left;
