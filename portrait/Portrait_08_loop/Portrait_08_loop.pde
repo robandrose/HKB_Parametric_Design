@@ -22,7 +22,7 @@ void setup(){
 // Draw Funktion, wird geloopt
 void draw(){
 
-  background(0);
+  background(100);
   stroke(0);
   arc(mitteX, 250, dicke*1.5, 150, -PI, 0, OPEN);
   ellipse(mitteX,mitteY-100,100,100);
@@ -30,7 +30,8 @@ void draw(){
   rect(mitteX-dicke*3/4,mitteY,dicke/4,150);
   rect(mitteX+dicke/2,mitteY,dicke/4,150);
   
-  stroke(150);
+
+  
   for(int i=0;i<anzahlHaare;i++){ 
     float startx=mitteX-dicke/2;
     float abstand=dicke/float(anzahlHaare); // ! Division durch Floatingpoint != Division durch Integer

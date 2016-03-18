@@ -12,7 +12,6 @@ float rectsize=12;
 float lineheight=rectsize*1.3;
 PFont font;
 
-
 void setup() {
   size(1000, 1200);
   lines = loadStrings("text.txt");

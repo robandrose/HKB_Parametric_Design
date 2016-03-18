@@ -1,0 +1,8 @@
+Aufgabe HKB Parametric Design 2016
+––––––––––––––––––––––––––––––––––
+
+Suche/wähle einen Text zu welchem du einen Bezug hast von beliebiger Länge.
+Entwickle eine oder mehrere visuelle Umsetzungen dieses Textes, die einen Bezug schaffen zu Form, Inhalt, Zeit, Tonlage, Stimmung dieses Textes. 
+Verwende dazu regelbasierte Methoden, welche dir ermöglichen, verschiedene Varianten zu explorieren, ohne «von Hand» gestalterisch einzugreifen.
+
+Die Endresultate werden auf Papier ausgedruckt präsentiert.

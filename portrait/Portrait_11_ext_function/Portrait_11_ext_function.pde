@@ -5,7 +5,6 @@
  */
 
 int dicke=150;
-
 int mitteX;
 int mitteY;
 
@@ -18,6 +17,7 @@ void setup() {
 }
 
 
+
 // Draw Funktion, wird geloopt
 void draw() {
   background(0);
@@ -28,16 +28,29 @@ void draw() {
   rect(mitteX-dicke/2-dicke/4, mitteY, dicke/4, 150); // linker Arm
   rect(mitteX+dicke/2, mitteY, dicke/4, 150); // rechter Arm
 
+  
+  drawPickel(mitteX, mitteY-100,5);
+  drawPickel(20,200,10);
+ 
+}
 
+
+
+
+void drawPickel(int posx, int posy, float size){
+ 
   // Pickel zeichnen
   pushStyle();
-  fill(255, 0, 0);
   noStroke();
-  pushMatrix();
-  translate(mitteX, mitteY-100);
-  ellipse(0, 0, 5, 5);
-  popMatrix();
-  popStyle();
   
+  pushMatrix();
+  translate(posx, posy);
+  fill(255, 0, 0);
+  ellipse(0, 0, size, size);
+  fill(200);
+  ellipse(0,0,2,2);
+  popMatrix();
+
+  popStyle();
   
 }

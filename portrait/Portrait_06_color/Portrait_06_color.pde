@@ -26,6 +26,8 @@ void setup(){
 void draw(){
   background(0);
   
+  pushMatrix();
+  translate(mouseX,mouseY);
   
   fill(150,40,90);
   arc(mitteX, 250, dicke+2*armdicke, 150, -PI, 0, OPEN);
@@ -41,4 +43,5 @@ void draw(){
   rect(mitteX-dicke/2-armdicke,mitteY,armdicke,150);
   rect(mitteX+dicke/2,mitteY,armdicke,150);
 
+  popMatrix();
 }

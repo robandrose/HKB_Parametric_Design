@@ -35,7 +35,6 @@ void draw() {
    
 }
 
-
 // Externe Funktion mit Parametern:
 void drawPickel(float posx, float posy, int col){
   pushStyle();
